@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Index</title>	
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div id="finder" class="sidebar" >
+		<div id="name" class="field">
+			<h2>Component Finder & Comparator</h2>
+			<form action="/action_page.php" onsubmit="myFunction()">
+				<input type="text" id="comp" name="component" placeholder="Type Component">
+				<select class="type">
+					<option value="GPU" class = "option">GPU</option>
+					<option value="RAM" class = "option">RAM</option>
+					<option value="ROM" class = "option">ROM</option>
+					<option value="CPU" class = "option">CPU</option>
+					<option value="per" class = "option">Peripheric</option>
+					<option value="scr" class = "option">Screen</option>
+				</select>
+			</form>
+		</div>
+		<div id="price" class="field">
+			<i id="price_icon" class="material-icons">attach_money</i>
+			<h3>Price</h3>
+			<div id="pricefilter">
+				<form target="_self">
+					<span>From</span>
+					<input type="number" class = "price" name="minprice" placeholder="MIN" min="0">
+						<span>to</span>
+					<input type="number" class = "price" name="maxprice" placeholder="MAX" min="0">
+						<span>€</span>
+				</form>
+			</div>
+		</div>
+		<div id="reviews" class="field">
+			<i class="material-icons">home</i>
+			<h3>Where to buy</h3>
+			<ul class="list_icons">
+				<li class="item">
+					<img height="16" width="16" src="https://www.pccomponentes.com/favicon.ico"></img>
+					<a class="route" href="https://www.pccomponentes.com/" target="iframe">PcComp.</a>
+				</li>
+				<li class="item">
+					<img height="16" width="16" src="https://www.vsgamers.es/favicon.ico"></img>
+					<a class="route" href="https://www.vsgamers.es" target="iframe">VSGamers</a>
+				</li>
+				<li class="item">
+					<img height="16" width="16" src="https://www.pcbox.com/favicon.ico"></img>
+					<a class="route" href="https://www.pcbox.com" target="iframe">PcBox</a>
+				</li>
+				<li class="item">
+					<a class="route" href="">Item</a>
+				</li>
+			</ul>
+		</div>
+		<div id="videos" class="field">
+			<i class="material-icons">assessment</i>
+			<h3>Related Sites</h3>
+			<ul class="list_icons">
+				<li class="item">
+					<img height="16" width="16" src="https://www.pccomponentes.com/favicon.ico"></img>
+					<a  href="https://www.pccomponentes.com/" target="iframe">PcComp.</a>
+				</li>
+				<li class="item">
+					<img height="16" width="16" src="https://www.vsgamers.es/favicon.ico"></img>
+					<a class="route" href="https://www.vsgamers.es" target="iframe">VSGamers</a>
+				</li>
+				<li class="item">
+					<img height="16" width="16" src="https://www.pcbox.com/favicon.ico"></img>
+					<a class="route" href="https://www.pcbox.com" target="iframe">PcBox</a>
+				</li>
+				<li class="item">
+					<a class="route" href="">Item</a>
+				</li>
+			</ul>
+		</div>
+		<div id="comparator" class="field">
+			<button class = form>Find the best deal!</button>
+		</div>
+		<div id="bottom-bar" class="field">
+			<a href="" id="settings">Settings</a> 
+			<span>//</span>
+			<a href="curriculum.html" id="about" target="iframe">About Us</a>
+		</div>
+	</div>
+	<div id="finder_icon" onclick="hide()"></div>
+	<iframe id=iframe name="iframe" src="https://www.pccomponentes.com/"></iframe>
+</body>

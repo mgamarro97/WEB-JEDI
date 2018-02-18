@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About Us</title>	
+	<link rel="stylesheet" href="css/cHeader.css">
+	<link rel="stylesheet" href="css/cBody.css">
+	<link rel="stylesheet" href="css/cSlider.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<header>
+		<h2 id="title">Curriculum Vitae</h2>
+		<ul>
+			<li><a href="">Personal Information</a></li>
+			<li><a href="">Titulations</a></li>
+			<li><a href="">Relevant Skills</a></li>
+		</ul>
+	</header>
+	<div id="content">
+		<div id="bio" class="section">
+			<h3>Personal Information</h3>
+			<table>
+			 	<tr>
+				  <td rowspan="5"><img src="images/foto.jpg" id="profile"></td>
+			  	</tr>
+			    <tr>
+			      <th>Name</th>
+			      <td colspan="2">Mario Gamarro Prieto</td> 
+			    </tr>
+			    <tr>
+			      <th>Birthdate</td>
+			      <td colspan="2">19/6/1997</td>
+			    </tr>
+			    <tr>
+			      <th>Residences</td>
+			      <td>Reus</td>
+			      <td>Barcelona</td>
+			    </tr>
+			    <tr>
+			      <th>Email</td>
+			      <td colspan="2">mario.gamarro@est.fib.upc.edu</td>
+			    </tr>
+			</table>
+		</div>
+		
+		<div id="Titulations" class="section">
+			<h3>Titulations</h3>
+			<!-- Slideshow container -->
+
+			<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 2</div>
+			  <img src="images/puig.png" style="width:100%">
+			  <div class="text">ESO & Batxillerat</div>
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 2</div>
+			  <img src="images/upc.png" style="width:100%">
+			  <div class="text">Degree on Computer Science with mention on Software Engineering</div>
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			</div>
+					</div>
+		
+		<div id="skills" class="section">
+			<h3>Programming skills</h3>
+			<div class="languages">
+					<img src="images/java.png" onmouseover="setText('Medium knowledge on OOL and Android')" class="flag">
+					<img src="images/c++.png" onmouseover="setText('Basic knowledge on OOL and console')" class="flag">
+					<img src="images/xml.png" onmouseover="setText('Basic knowledge working on Android and JavaFX')" class="flag">
+					<img src="images/sql.png" onmouseover="setText('Basic SQLite/MySQL knowledge')" class="flag">
+					<img src="images/uml.png" onmouseover="setText('Good level on UML scheme design')" class="flag">
+					<img src="images/html.png" onmouseover="setText('Basic knowledge on web design ')" class="flag">
+					<img src="images/css.png" onmouseover="setText('Basic skills')" class="flag">
+					<img src="images/javascript.png" onmouseover="setText('Basic skills with javascript and Jquery')" class="flag">
+			</div>
+			<div class="details" id="info">Hover over the icons to see details</div>
+			<h3>Languages</h3>
+			<div class="languages">
+				<img src="images/eng.png" onmouseover="setText('Acredited B2 level by EOI')" class="flag">
+				<img src="images/cat.png" onmouseover="setText('C level by finishing Batxillerat')" class="flag" style="transform: rotate(90deg)">
+				<img src="images/esp.png" onmouseover="setText('A2 level by finishing Batxillerat')" class="flag">
+			</div>
+			<h3>Other relevant habilities</h3>
+			<div class="languages">
+				<img src="images/brain.png" onmouseover="setText('Ease to learn new programming languages/other things needed to work')" class="flag">
+				<img src="images/teamwork.png" onmouseover="setText('No problems on working on a team environment')" class="flag">
+			</div>
+		</div>
+		<footer class="sectionS">
+			<ul>
+			<li><a target="_blank" href="https://www.facebook.com/mario.gamarro.50">Facebook</a></li>
+			<li><a target="_blank" href="https://www.linkedin.com/in/mario-gamarro-prieto-85b904153/">Linkedin</a></li>
+			<li><a target="_blank" href="https://github.com/mgamarro97">GitHub</a></li>
+		</ul>
+		</footer>
+		<button onclick="toTop()" id="return" title="top">Return</button>
+		<script src="js/scriptsC.js"></script>
+	</div>
+</body>
+
